@@ -16,5 +16,7 @@ $(EXEC): $(OBJS)
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@ -O3
 
+transpose:
+	gcc -O3 transpose_benchmark.c -o transpose
 clean:
 	rm -f $(OBJS) $(EXEC)
