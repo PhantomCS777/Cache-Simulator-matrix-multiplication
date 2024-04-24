@@ -27,5 +27,7 @@ for file in file_list:
 
 plt.legend(legends)
 plt.grid(True)  # Add grid lines
-
+plt.xlabel('Value of n')
+plt.ylabel('Time taken (s)')
+plt.savefig("mult-benchmark.png")
 plt.show()
